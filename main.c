@@ -1,5 +1,5 @@
 /**
- * Example ArrayList implementation using C structs
+ * ArrayList implementation using C structs
  */
 
 #include <stdio.h>
