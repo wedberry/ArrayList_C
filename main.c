@@ -95,8 +95,6 @@ void arrayListAppend(ArrayList *a, int value) {
     
   }
   // Put the new value in the next position in a->array
-  // Tip: if you're keeping track correctly, the next
-  // free position is always a->array[a->size]
   a->array[a->size] = value;
 
   // Increment a->size
@@ -205,14 +203,15 @@ int main() {
   printf("%d\n", arrayListGet(a, arrayListSize(a) / 2));
 
   
-  // Test 6: write your own test for arrayListInsert
+  // Test 6: insert values into ArrayList
+  //
   printf("Test 6\n");
   arrayListInsert(a, 37, 3);
   arrayListInsert(a, 5, 1);
   arrayListInsert(a, 42, arrayListSize(a) - 1);
   arrayListPrint(a);
   
-  // Test 7: write your own test for arrayListRemove
+  // Test 7: Remove values from ArrayList
   printf("Test 7\n");
   printf("%d\n", arrayListRemove(a, arrayListSize(a) - 2));
   printf("%d\n", arrayListRemove(a, 1));
